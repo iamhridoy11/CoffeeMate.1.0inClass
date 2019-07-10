@@ -34,18 +34,25 @@ public class Base extends AppCompatActivity {
 		getMenuInflater().inflate(R.menu.main_menu, menu);
 		return true;
 	}
-	public void menuInfo(MenuItem m)
-	{
+
+	public void menuInfo(MenuItem m) {
 		openInfoDialog(this);
 	}
-	public void menuHelp(MenuItem m)
-	{
+
+	public void menuHelp(MenuItem m) {
 		goToActivity(this, Help.class, null);
 	}
-	public void menuHome(MenuItem m)
-	{
+
+	public void menuHome(MenuItem m) {
 		goToActivity(this, Home.class, null);
 	}
+
+	public void menuSettings(MenuItem m) {
+
+		goToActivity(this,Settings.class,null);
+
+	}
+
 
 	public void openInfoDialog(Activity current) {
 		Dialog dialog = new Dialog(current);
